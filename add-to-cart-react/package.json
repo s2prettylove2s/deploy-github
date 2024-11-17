@@ -1,4 +1,7 @@
 {
+  // Thêm đường dẫn homepage
+  // https://[your-user-name].github.io/[your-repo-name]/
+  "homepage": "https://github.com/s2prettylove2s/deploy-github",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -30,7 +33,10 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    // Thêm command predeploy & deploy app
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "eslintConfig": {
     "extends": [
